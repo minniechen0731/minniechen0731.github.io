@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="介紹 這裡主要寫下各種常用的MarkDown語法測試。這裡也有完整中文介紹與維基百科介紹。這個語言的重點在於方便直接看懂內容，並且容易學習。相較於沒有任何標示的純文字文件而言，MarkDown的確是一個可以快速幫你標記，並且紀錄各種想法的好幫手。另一方面，龐大無比功能複雜的word絕對不是一個紀錄筆記的好方式（當然也可以選擇用word…但若要把word的內容直接發布到網誌上也是需要花費一番功夫的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog顯示語法測試(MarkDown)">
+<meta property="og:url" content="http://yoursite.com/2017/07/11/markdown_test/index.html">
+<meta property="og:site_name" content="Minnie">
+<meta property="og:description" content="介紹 這裡主要寫下各種常用的MarkDown語法測試。這裡也有完整中文介紹與維基百科介紹。這個語言的重點在於方便直接看懂內容，並且容易學習。相較於沒有任何標示的純文字文件而言，MarkDown的確是一個可以快速幫你標記，並且紀錄各種想法的好幫手。另一方面，龐大無比功能複雜的word絕對不是一個紀錄筆記的好方式（當然也可以選擇用word…但若要把word的內容直接發布到網誌上也是需要花費一番功夫的。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-07-11T13:46:21.000Z">
+<meta property="article:modified_time" content="2017-09-07T16:00:00.000Z">
+<meta property="article:author" content="Minnie Chen">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="test">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="blogsetup">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2017/07/11/markdown_test/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Blog顯示語法測試(MarkDown) | Minnie</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Minnie</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/11/markdown_test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Minnie Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Minnie">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Blog顯示語法測試(MarkDown)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-07-11 21:46:21" itemprop="dateCreated datePublished" datetime="2017-07-11T21:46:21+08:00">2017-07-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2017-09-08 00:00:00" itemprop="dateModified" datetime="2017-09-08T00:00:00+08:00">2017-09-08</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9B%BB%E8%85%A6/" itemprop="url" rel="index"><span itemprop="name">電腦</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="介紹">介紹</h2>
+<p>這裡主要寫下各種常用的<a href="https://daringfireball.net/projects" target="_blank" rel="noopener" title="MarkDown OfficalSite">MarkDown</a>語法測試。這裡也有<a href="http://markdown.tw/" target="_blank" rel="noopener" title="中文MarkDown語法">完整中文介紹</a>與<a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener" title="Wiki-MarkDown">維基百科</a>介紹。這個語言的重點在於<strong>方便直接看懂內容</strong>，並且<strong>容易學習</strong>。相較於沒有任何標示的純文字文件而言，MarkDown的確是一個可以快速幫你標記，並且紀錄各種想法的好幫手。另一方面，龐大無比功能複雜的word絕對不是一個紀錄筆記的好方式（當然也可以選擇用word…但若要把word的內容直接發布到網誌上也是需要花費一番功夫的。）那為什麼不選擇在許多部落格都支援的Markdown語法作為寫作的最佳幫手呢？當然，本站主要以<strong>Hexo+Github</strong>在<strong>fedora25</strong>作業系統下架設。</p>
+<a id="more"></a>
+<h2 id="標題Headers">標題Headers</h2>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Header1</span></span><br><span class="line"><span class="section">## Header2</span></span><br><span class="line"><span class="section">### Header 3</span></span><br><span class="line"><span class="section">#### Header 4</span></span><br><span class="line"><span class="section">##### Header 5</span></span><br><span class="line"><span class="section">###### Header 6</span></span><br></pre></td></tr></table></figure>
+<h1>Header1</h1>
+<h2 id="Header2">Header2</h2>
+<h3 id="Header-3">Header 3</h3>
+<h4 id="Header-4">Header 4</h4>
+<h5 id="Header-5">Header 5</h5>
+<h6 id="Headrer-6">Headrer 6</h6>
+<hr>
+<h2 id="區塊引言">區塊引言</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 一個區塊包含兩個引言</span><br><span class="line">然後這是沒有引言</span><br><span class="line"></span><br><span class="line">&gt; 例如這樣是第二個引言</span><br><span class="line">然後一樣enter到下行</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>一個區塊包含兩個引言<br>
+然後這是沒有引言</p>
+</blockquote>
+<blockquote>
+<p>例如這樣是第二個引言<br>
+然後一樣enter到下行</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;這是單一行區塊引言</span><br><span class="line">&gt;一直都有引言</span><br><span class="line">&gt;然後還是引言</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>這是單一行區塊引言<br>
+一直都有引言<br>
+然後還是引言</p>
+</blockquote>
+<h2 id="分隔線">分隔線</h2>
+<p>以下幾種最後的結果都會是同一種分隔線，選一種就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line">***</span><br><span class="line">*****</span><br><span class="line">- - -</span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<h2 id="內容強調">內容強調</h2>
+<p>下面是幾個常用的內容強調方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*我是斜體*</span><br><span class="line">**我是粗體**</span><br><span class="line">**我是_斜體_跟粗體**</span><br><span class="line">~~不要把我刪掉拉TAT~~</span><br></pre></td></tr></table></figure>
+<p><em>我是斜體</em><br>
+<strong>我是粗體</strong><br>
+<strong>我是_斜體_跟粗體</strong><br>
+<s>不要把我刪掉拉TAT</s></p>
+<hr>
+<h2 id="清單">清單</h2>
+<p>清單分成<strong>有序</strong>與<strong>無序</strong>兩種，且可以混搭。</p>
+<h3 id="無序清單">無序清單</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">* 123</span><br><span class="line">* 234</span><br><span class="line">* 345</span><br><span class="line"></span><br><span class="line">+ 123</span><br><span class="line">+ 234</span><br><span class="line">+ 456</span><br><span class="line"></span><br><span class="line">- 123</span><br><span class="line">- 245</span><br><span class="line">- 999</span><br></pre></td></tr></table></figure>
+<ul>
+<li>123</li>
+<li>234</li>
+<li>345</li>
+</ul>
+<ul>
+<li>123</li>
+<li>234</li>
+<li>456</li>
+</ul>
+<ul>
+<li>123</li>
+<li>245</li>
+<li>999</li>
+</ul>
+<h3 id="有序清單">有序清單</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 123</span><br><span class="line">2. 234</span><br><span class="line">3. 234</span><br></pre></td></tr></table></figure>
+<ol>
+<li>123</li>
+<li>234</li>
+<li>234</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. the top layer</span><br><span class="line">  1. the second one</span><br><span class="line">  2. still the second one</span><br><span class="line">    - no order</span><br><span class="line">	- hahaha</span><br><span class="line">2. back to the top layer</span><br></pre></td></tr></table></figure>
+<ol>
+<li>the top layer</li>
+<li>the second one</li>
+<li>still the second one<br>
+- no order<br>
+- hahaha</li>
+<li>back to the top layer</li>
+</ol>
+<h2 id="語法標注區塊">語法標注區塊</h2>
+<p>有兩種方式，一個是直接<code>tab</code>然後就變成區塊了</p>
+<pre><code>this is the code testing
+cout&lt;&lt;&quot;hello! word!&quot;;
+</code></pre>
+<p>另外一個則是將&quot;```&quot;包在要標注語法的地方</p>
+<hr>
+<h2 id="超連結-link">超連結(link)</h2>
+<p>主要有三種種插入方式</p>
+<ul>
+<li>
+<p>直接顯示<br>
+<code>&lt;http://google.com/&gt;</code><br>
+<code>&lt;http://google.com/&gt;</code></p>
+</li>
+<li>
+<p>直接插入方法<br>
+<code>get 10 times more traffic from [Google](&quot;http://google.com/&quot;)</code><br>
+get 10 times more traffic from <a href="%22http://google.com/%22">Google</a></p>
+</li>
+<li>
+<p>用Reference的方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">I get 10 times more traffic from [Google][1] than from</span><br><span class="line">[Yahoo][2] or [MSN][3].</span><br><span class="line"></span><br><span class="line">[1]: http:&#x2F;&#x2F;google.com&#x2F;        &quot;Google&quot;</span><br><span class="line">[2]: http:&#x2F;&#x2F;search.yahoo.com&#x2F;  &quot;Yahoo Search&quot;</span><br><span class="line">[3]: http:&#x2F;&#x2F;search.msn.com&#x2F;    &quot;MSN Search&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>I get 10 times more traffic from <a href="http://google.com/" target="_blank" rel="noopener" title="Google">Google</a> than from<br>
+<a href="http://search.yahoo.com/" target="_blank" rel="noopener" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" target="_blank" rel="noopener" title="MSN Search">MSN</a>.</p>
+<hr>
+<ul>
+<li>
+<h2 id="混搭測試">混搭測試</h2>
+<ul>
+<li>混搭測試</li>
+</ul>
+</li>
+</ul>
+<h2 id="註記">註記</h2>
+<p>markdown本身並沒有額外的語法註解，而是使用html本身的語言<code>&lt;!-- --&gt;</code>作為替代若只是單純的要註解單行，直接用上述的方式將要註解的內容寫入即可。若是要多行的話，只要將內容放置在此標注內即可，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">我是標注</span><br><span class="line">第二行</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="文章的-read-more-功能">文章的 read more 功能</h3>
+<p>要在文章中加入read more的功能十分簡單，也是利用註記的方式將文章顯示在首頁的內容分開，只要在文章中加入 <code>&lt;!--more--&gt;</code> 即可。</p>
+<h3 id="Mathjax">Mathjax</h3>
+<p>有關使用<a href="https://www.mathjax.org/" target="_blank" rel="noopener">MathJax</a>在Hexo中可以參考<a href="http://www.befuncool.com/2016/11/20/Hexo-NexT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8mathjax%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" target="_blank" rel="noopener">必富客的網誌</a>。如果只是簡單要引用的話，超級容易的，只要用下面的方式就可以了喔！<br>
+舉個例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\sum_&#123;i&#x3D;0&#125;^n i^2 &#x3D; \frac&#123;(n^2+n)(2n+1)&#125;&#123;6&#125;$</span><br></pre></td></tr></table></figure>
+<p>$_frac{(n^2+n)(2n+1)}{6}$</p>
+<p>${\sum_{i=0}^n i^2}$</p>
+<p>$\theta^{n+1}=\theta^n-\eta\nabla C\left( \theta^n\right)$</p>
+<p>如果是在字裡行間的話可以這樣$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$</p>
+<p>簡單講把你要的東西用<code>$ $</code>包起來，就可以拉！<br>
+當然如果想要知道更多用法可以參考<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">Mathematics-MathJax討論</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/test/" rel="tag"># test</a>
+              <a href="/tags/markdown/" rel="tag"># markdown</a>
+              <a href="/tags/blogsetup/" rel="tag"># blogsetup</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2017/07/11/hexo-test-mdandhackmd/" rel="prev" title="Markdown 顯示語法測試">
+      <i class="fa fa-chevron-left"></i> Markdown 顯示語法測試
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/03/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介紹"><span class="nav-number">1.</span> <span class="nav-text">介紹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#標題Headers"><span class="nav-number">2.</span> <span class="nav-text">標題Headers</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text">Header1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Header2"><span class="nav-number">1.</span> <span class="nav-text">Header2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Header-3"><span class="nav-number">1.1.</span> <span class="nav-text">Header 3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Header-4"><span class="nav-number">1.1.1.</span> <span class="nav-text">Header 4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Header-5"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">Header 5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Headrer-6"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">Headrer 6</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#區塊引言"><span class="nav-number">2.</span> <span class="nav-text">區塊引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分隔線"><span class="nav-number">3.</span> <span class="nav-text">分隔線</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#內容強調"><span class="nav-number">4.</span> <span class="nav-text">內容強調</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清單"><span class="nav-number">5.</span> <span class="nav-text">清單</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#無序清單"><span class="nav-number">5.1.</span> <span class="nav-text">無序清單</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#有序清單"><span class="nav-number">5.2.</span> <span class="nav-text">有序清單</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#語法標注區塊"><span class="nav-number">6.</span> <span class="nav-text">語法標注區塊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超連結-link"><span class="nav-number">7.</span> <span class="nav-text">超連結(link)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混搭測試"><span class="nav-number">8.</span> <span class="nav-text">混搭測試</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#註記"><span class="nav-number">9.</span> <span class="nav-text">註記</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文章的-read-more-功能"><span class="nav-number">9.1.</span> <span class="nav-text">文章的 read more 功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mathjax"><span class="nav-number">9.2.</span> <span class="nav-text">Mathjax</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Minnie Chen</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Minnie Chen</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
